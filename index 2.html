@@ -1,0 +1,1092 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Коммуналка">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#edf0f5" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d141f" media="(prefers-color-scheme: dark)">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<title>Коммуналка</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+  /* base reset (hosted standalone page) */
+  :root { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+  body { margin: 0; }
+  [hidden] { display: none !important; }
+  /* Layout: one narrow column (max 560px) with a bottom tab bar. "Сейчас" = a to-do list of payments; "За год" = chart + months; "Счета" = what you pay and how. */
+  :root {
+    --bg: #edf0f5;
+    --surface: #ffffff;
+    --surface-2: #f4f6fa;
+    --line: #d8dee8;
+    --ink: #142033;
+    --dim: #5a6779;
+    --accent: #2744d6;
+    --accent-ink: #ffffff;
+    --tile-bg: #e4eafc;
+    --tile-ink: #2744d6;
+    --ok: #1e7a4c;
+    --ok-bg: #e1f3e9;
+    --warn: #9a5b00;
+    --warn-bg: #fcefd3;
+    --bad: #bf2f25;
+    --bad-bg: #fbe4e1;
+    --scrim: rgba(10, 18, 30, 0.45);
+    --font-body: "Golos Text", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --font-num: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0d141f; --surface: #151f2e; --surface-2: #1c283a; --line: #2a3850;
+      --ink: #e8eef7; --dim: #97a5ba; --accent: #7e96ff; --accent-ink: #0d141f;
+      --tile-bg: #22325a; --tile-ink: #a9b9ff;
+      --ok: #5fd39a; --ok-bg: #133326; --warn: #f0b554; --warn-bg: #3a2a0e; --bad: #ff7b6e; --bad-bg: #3c1a18;
+      --scrim: rgba(0, 0, 0, 0.6); color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0d141f; --surface: #151f2e; --surface-2: #1c283a; --line: #2a3850;
+    --ink: #e8eef7; --dim: #97a5ba; --accent: #7e96ff; --accent-ink: #0d141f;
+    --tile-bg: #22325a; --tile-ink: #a9b9ff;
+    --ok: #5fd39a; --ok-bg: #133326; --warn: #f0b554; --warn-bg: #3a2a0e; --bad: #ff7b6e; --bad-bg: #3c1a18;
+    --scrim: rgba(0, 0, 0, 0.6); color-scheme: dark;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  body {
+    background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 15px; line-height: 1.4;
+    padding-block: 18px 104px;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+    -webkit-tap-highlight-color: transparent;
+  }
+  button, input, select { font: inherit; color: inherit; }
+  button { cursor: pointer; }
+  :focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  .wrap { max-width: 560px; margin-inline: auto; display: flex; flex-direction: column; gap: 18px; }
+  .muted { color: var(--dim); }
+  .num { font-family: var(--font-num); font-variant-numeric: tabular-nums; }
+
+  .top h1 { margin: 0; font-size: 28px; line-height: 1.1; font-weight: 700; letter-spacing: -0.01em; }
+  .top .date { margin: 4px 0 0; font-size: 13px; color: var(--dim); }
+
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 44px; padding: 0 18px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface); font-weight: 600; font-size: 15px; }
+  .btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+  .btn.danger { color: var(--bad); border-color: var(--bad); background: transparent; }
+  .btn.sm { min-height: 38px; padding: 0 14px; font-size: 14px; }
+  .btn.block { width: 100%; }
+
+  .summary { border-radius: 16px; padding: 16px; display: flex; flex-direction: column; gap: 4px; }
+  .summary.bad { background: var(--bad-bg); color: var(--bad); }
+  .summary.warn { background: var(--warn-bg); color: var(--warn); }
+  .summary.ok { background: var(--ok-bg); color: var(--ok); }
+  .summary strong { font-size: 22px; line-height: 1.2; font-weight: 700; }
+  .summary span { font-size: 14px; }
+  .banner { border-radius: 12px; padding: 10px 14px; font-size: 14px; background: var(--warn-bg); color: var(--warn); display: flex; gap: 10px; align-items: center; justify-content: space-between; }
+  .banner.bad { background: var(--bad-bg); color: var(--bad); }
+  .banner button { flex: none; background: transparent; border: 1px solid currentColor; border-radius: 10px; padding: 6px 10px; font-weight: 600; font-size: 13px; }
+
+  .sec { display: flex; flex-direction: column; gap: 8px; }
+  .sec > h2 { margin: 0; font-size: 17px; font-weight: 700; display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+  .sec > h2.sm { font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dim); }
+  .sec > h2 .cnt { font-family: var(--font-num); font-size: 14px; color: var(--dim); }
+  .sec > p.sub { margin: -4px 0 2px; font-size: 13px; color: var(--dim); }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
+  .card > * + * { border-top: 1px solid var(--line); }
+  .card.bad { border-color: var(--bad); }
+
+  .tile { width: 40px; height: 40px; border-radius: 12px; background: var(--tile-bg); color: var(--tile-ink); display: grid; place-items: center; flex: none; }
+  .tile svg { width: 22px; height: 22px; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .tile.sm { width: 34px; height: 34px; border-radius: 10px; }
+  .tile.sm svg { width: 19px; height: 19px; }
+
+  .item { padding: 14px 16px; display: flex; flex-direction: column; gap: 12px; }
+  .ihead { display: flex; gap: 12px; align-items: flex-start; width: 100%; background: none; border: 0; padding: 0; text-align: left; }
+  .ihead.static { cursor: default; }
+  .itext { min-width: 0; flex: 1; display: flex; flex-direction: column; gap: 2px; }
+  .iname { font-weight: 600; font-size: 16px; overflow-wrap: anywhere; }
+  .imeta { font-size: 13px; color: var(--dim); }
+  .imeta.bad { color: var(--bad); } .imeta.warn { color: var(--warn); } .imeta.ok { color: var(--ok); }
+  .iact { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .iact .amt { flex: 1; min-width: 100px; font-family: var(--font-num); font-weight: 700; font-size: 18px; font-variant-numeric: tabular-nums; }
+  .iact input { flex: 1; min-width: 120px; }
+  .iact.two .amt { flex: 1 0 100%; }
+  .iact.two .btn { flex: 1; }
+  .pill { align-self: flex-start; display: inline-flex; margin-top: 6px; padding: 3px 10px; border-radius: 999px; font-size: 12px; font-weight: 700; background: var(--surface-2); color: var(--dim); }
+  .pill.bad { background: var(--bad-bg); color: var(--bad); }
+  .pill.warn { background: var(--warn-bg); color: var(--warn); }
+  .pill.ok { background: var(--ok-bg); color: var(--ok); }
+
+  .line { display: flex; align-items: center; gap: 12px; width: 100%; padding: 10px 16px; background: none; border: 0; text-align: left; min-height: 56px; }
+  .line .amt { font-family: var(--font-num); font-weight: 700; font-size: 14px; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .line .amt.e { color: var(--dim); font-weight: 500; }
+
+  .rd { padding: 14px 16px; display: flex; flex-direction: column; gap: 8px; }
+  .rd-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+  .rd-body { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .rd-body input { flex: 1; min-width: 140px; }
+  .rd-warn { font-size: 13px; color: var(--warn); margin: 0; }
+  .rd-foot { padding: 12px 16px; }
+  .meter { display: inline-flex; gap: 2px; }
+  .meter b { display: grid; place-items: center; width: 15px; height: 24px; border-radius: 3px; background: #1b2431; color: #f2f5fa; font: 500 14px var(--font-num); }
+  .meter b.r { color: #ff7a6c; }
+
+  .field { display: flex; flex-direction: column; gap: 6px; }
+  .field > label, .lbl { font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--dim); }
+  input[type="text"], input[type="number"], input[type="date"], select { width: 100%; min-height: 46px; padding: 0 12px; font-size: 16px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); color: var(--ink); }
+  input.big { font-family: var(--font-num); font-size: 18px; font-weight: 500; }
+  .hint { font-size: 13px; color: var(--dim); display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .check { display: flex; align-items: center; gap: 12px; min-height: 44px; font-size: 16px; cursor: pointer; }
+  .check input { width: 22px; height: 22px; accent-color: var(--accent); flex: none; }
+  .linkbtn { background: none; border: 0; padding: 4px 0; color: var(--accent); font-weight: 600; text-decoration: underline; font-size: 13px; }
+
+  .chips { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 2px; }
+  .chip { flex: none; min-height: 38px; padding: 0 14px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); font-weight: 600; font-size: 14px; }
+  .chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+  .seg { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: var(--surface); }
+  .seg label { display: grid; place-items: center; min-height: 48px; font-size: 14px; font-weight: 600; cursor: pointer; text-align: center; padding: 4px 8px; line-height: 1.25; }
+  .seg input { position: absolute; opacity: 0; pointer-events: none; }
+  .seg label:has(input:checked) { background: var(--accent); color: var(--accent-ink); }
+  .seg label:has(input:focus-visible) { outline: 3px solid var(--accent); outline-offset: -3px; }
+  .icons { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; }
+  .icons label { display: grid; place-items: center; min-height: 48px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); cursor: pointer; color: var(--dim); }
+  .icons label svg { width: 24px; height: 24px; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .icons input { position: absolute; opacity: 0; pointer-events: none; }
+  .icons label:has(input:checked) { background: var(--tile-bg); border-color: var(--accent); color: var(--tile-ink); }
+  .icons label:has(input:focus-visible) { outline: 3px solid var(--accent); outline-offset: 2px; }
+
+  /* year */
+  .bar { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+  .bar .yr { font-family: var(--font-num); font-size: 22px; font-weight: 700; }
+  .iconbtn { width: 44px; height: 44px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface); display: grid; place-items: center; font-size: 20px; line-height: 1; }
+  .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .stat { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 12px 14px; display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+  .stat b { font-family: var(--font-num); font-size: 18px; font-weight: 700; overflow-wrap: anywhere; }
+  .stat span { font-size: 12px; color: var(--dim); }
+  .chart { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 14px 10px 8px; }
+  .bars { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 3px; }
+  .bcol { display: flex; flex-direction: column; justify-content: flex-end; align-items: center; height: 112px; gap: 5px; background: none; border: 0; padding: 0; min-width: 0; }
+  .bfill { width: 100%; border-radius: 5px 5px 2px 2px; min-height: 3px; background: var(--line); }
+  .bfill.ok { background: var(--ok); } .bfill.warn { background: var(--warn); } .bfill.bad { background: var(--bad); } .bfill.pend { background: var(--accent); opacity: 0.55; }
+  .blab { font-size: 10px; color: var(--dim); line-height: 1; }
+  .bcol.sel .blab { color: var(--ink); font-weight: 700; }
+  .legend { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 12px; color: var(--dim); padding: 8px 4px 2px; }
+  .legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .legend i { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
+  .legend i.ok { background: var(--ok); } .legend i.warn { background: var(--warn); } .legend i.bad { background: var(--bad); } .legend i.pend { background: var(--accent); opacity: 0.55; }
+  .mrow { display: flex; align-items: center; gap: 10px; width: 100%; padding: 12px 16px; background: none; border: 0; text-align: left; min-height: 60px; }
+  .mrow .mn { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+  .mrow .mn b { font-size: 16px; }
+  .mrow .mn b::first-letter { text-transform: uppercase; }
+  .mrow .mt { font-family: var(--font-num); font-weight: 700; font-size: 15px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .chev { color: var(--dim); font-size: 18px; transition: transform 0.15s; }
+  .chev.open { transform: rotate(90deg); }
+  .mbody { background: var(--surface-2); }
+  .mbody > * + * { border-top: 1px solid var(--line); }
+  .sbar { height: 6px; border-radius: 3px; background: var(--surface-2); overflow: hidden; }
+  .sbar i { display: block; height: 100%; background: var(--accent); border-radius: 3px; }
+  .rdl { display: flex; justify-content: space-between; gap: 12px; padding: 10px 16px; font-size: 14px; }
+
+  .srow { display: flex; align-items: center; gap: 12px; width: 100%; padding: 12px 16px; background: transparent; border: 0; text-align: left; min-height: 64px; }
+  .srow .t { font-weight: 600; font-size: 16px; overflow-wrap: anywhere; }
+  .srow .s { font-size: 13px; color: var(--dim); margin-top: 2px; }
+  .pad { padding: 16px; display: flex; flex-direction: column; gap: 12px; }
+  .two-col { display: grid; grid-template-columns: 1fr auto; gap: 8px; }
+  .note { margin: 0; font-size: 13px; color: var(--dim); }
+
+  /* onboarding */
+  .lead { margin: 0; font-size: 15px; color: var(--dim); max-width: 46ch; }
+  .ob-item { padding: 6px 16px 10px; }
+  .ob-item small { display: block; color: var(--dim); font-size: 12px; }
+  .ob-extra { display: flex; flex-wrap: wrap; gap: 8px 10px; align-items: center; padding: 0 0 6px 34px; font-size: 14px; color: var(--dim); }
+  .ob-item:not(:has(.ob-on:checked)) .ob-extra { display: none; }
+  .ob-extra input[type="number"] { width: 64px; min-height: 40px; text-align: center; font-family: var(--font-num); }
+  .ob-extra select { width: auto; min-height: 40px; font-size: 14px; }
+  .ob-extra input[type="text"] { flex: 1 1 100%; min-height: 44px; }
+  .link { background: none; border: 0; color: var(--accent); font-weight: 600; text-decoration: underline; padding: 8px 0; text-align: center; }
+  .empty { padding: 22px 16px; text-align: center; color: var(--dim); font-size: 14px; }
+
+  #tabs { position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; background: var(--surface); border-top: 1px solid var(--line); padding: 6px max(16px, env(safe-area-inset-right, 0px)) calc(6px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); }
+  #tabs[hidden] { display: none; }
+  .tabs-in { max-width: 560px; margin-inline: auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; }
+  .tab { position: relative; display: flex; flex-direction: column; align-items: center; gap: 2px; min-height: 52px; padding: 6px 4px; border: 0; background: transparent; color: var(--dim); font-size: 12px; font-weight: 600; border-radius: 12px; }
+  .tab svg { width: 24px; height: 24px; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .tab[aria-current="page"] { color: var(--accent); }
+  .badge { position: absolute; top: 2px; left: calc(50% + 6px); min-width: 18px; height: 18px; padding: 0 5px; border-radius: 9px; background: var(--bad); color: #fff; font: 700 11px/18px var(--font-num); text-align: center; font-style: normal; }
+  .badge[hidden] { display: none; }
+
+  .scrim { position: fixed; inset: 0; background: var(--scrim); z-index: 30; }
+  .sheet { position: fixed; left: 0; right: 0; bottom: 0; z-index: 31; margin-inline: auto; width: 100%; max-width: 560px; max-height: 92%; overflow-y: auto; background: var(--bg); border-radius: 22px 22px 0 0; border: 1px solid var(--line); border-bottom: 0; padding: 16px max(16px, env(safe-area-inset-left, 0px)) calc(20px + env(safe-area-inset-bottom, 0px)); display: flex; flex-direction: column; gap: 14px; animation: up 0.18s ease-out; }
+  @keyframes up { from { transform: translateY(24px); opacity: 0.4; } to { transform: none; opacity: 1; } }
+  .sheet-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .sheet-head .who { display: flex; align-items: center; gap: 12px; min-width: 0; }
+  .sheet-head h2 { margin: 0; font-size: 19px; overflow-wrap: anywhere; }
+  .stepper { display: grid; grid-template-columns: 44px 1fr 44px; align-items: center; gap: 8px; }
+  .stepper .cur { text-align: center; font-weight: 700; font-size: 17px; }
+  .stepper .cur::first-letter { text-transform: uppercase; }
+  .stepper .cur small { display: block; font-weight: 500; font-size: 12px; color: var(--dim); }
+  .due-line { font-size: 14px; padding: 10px 12px; border-radius: 12px; background: var(--surface-2); color: var(--dim); }
+  .due-line.bad { background: var(--bad-bg); color: var(--bad); }
+  .due-line.warn { background: var(--warn-bg); color: var(--warn); }
+  .due-line.ok { background: var(--ok-bg); color: var(--ok); }
+  .acts { display: flex; flex-direction: column; gap: 8px; }
+
+  #toast { position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(78px + env(safe-area-inset-bottom, 0px)); z-index: 40; max-width: min(92vw, 520px); background: var(--ink); color: var(--bg); border-radius: 12px; padding: 10px 14px; font-size: 14px; display: flex; gap: 14px; align-items: center; }
+  #toast[hidden] { display: none; }
+  #toast button { background: none; border: 0; color: inherit; font-weight: 700; text-decoration: underline; padding: 4px; }
+  .splash { min-height: 50vh; display: grid; place-items: center; color: var(--dim); }
+  @media (prefers-reduced-motion: reduce) { .sheet { animation: none; } .chev { transition: none; } }
+</style>
+</head>
+<body>
+
+<div id="status" class="wrap" aria-live="polite"></div>
+<div id="app" class="wrap"><div class="splash">Загружаю данные…</div></div>
+<nav id="tabs" aria-label="Разделы" hidden>
+  <div class="tabs-in">
+    <button class="tab" data-a="tab" data-v="home" aria-current="page">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+      <span>Сейчас</span><i class="badge" id="badge" hidden>0</i>
+    </button>
+    <button class="tab" data-a="tab" data-v="year">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V12M10 20V6M15 20V10M20 20V15"/></svg>
+      <span>За год</span>
+    </button>
+    <button class="tab" data-a="tab" data-v="settings">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h12v16l-3-2-3 2-3-2-3 2zM9 9h6M9 13h6"/></svg>
+      <span>Счета</span>
+    </button>
+  </div>
+</nav>
+<div id="sheetRoot"></div>
+<div id="toast" role="status" hidden></div>
+<input type="file" id="importFile" accept=".json,application/json" hidden>
+
+<script>
+(function () {
+  'use strict';
+  var LS = 'kommunalka-v1';
+  var MON = ['январь','февраль','март','апрель','май','июнь','июль','август','сентябрь','октябрь','ноябрь','декабрь'];
+  var MON_GEN = ['января','февраля','марта','апреля','мая','июня','июля','августа','сентября','октября','ноября','декабря'];
+  var MON_SHORT = ['янв','фев','мар','апр','май','июн','июл','авг','сен','окт','ноя','дек'];
+  var DOW = ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'];
+  var ICONS = {
+    power: 'M13 3 5 13h6l-1 8 8-10h-6z',
+    heat: 'M4 7h16v10H4zM8 7v10M12 7v10M16 7v10M7 17v2M17 17v2',
+    gas: 'M12 3c1 3 5 5 5 10a5 5 0 0 1-10 0c0-2 1-3 2-4 0 2 1 3 2 3 0-3-1-6 1-9z',
+    water: 'M12 3c3 4 6 7 6 11a6 6 0 0 1-12 0c0-4 3-7 6-11z',
+    trash: 'M5 7h14M10 7V4h4v3M7 7l1 13h8l1-13M10 11v6M14 11v6',
+    house: 'M4 11.5 12 5l8 6.5V19a1 1 0 0 1-1 1h-4v-5H9v5H5a1 1 0 0 1-1-1z',
+    net: 'M3 9a14 14 0 0 1 18 0M6 12.5a9.5 9.5 0 0 1 12 0M9 16a5 5 0 0 1 6 0M12 19.5h.01',
+    phone: 'M8 3h8a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zM11 18h2',
+    other: 'M6 4h12v16l-3-2-3 2-3-2-3 2zM9 9h6M9 13h6'
+  };
+  var ICON_LABEL = { power: 'Электричество', heat: 'Отопление', gas: 'Газ', water: 'Вода', trash: 'Мусор', house: 'Дом', net: 'Интернет', phone: 'Телефон', other: 'Другое' };
+  var PRESETS = [
+    { name: 'Электричество', icon: 'power', kind: 'var', due: 15, off: 1, on: true },
+    { name: 'Центральное отопление', icon: 'heat', kind: 'var', due: 15, off: 1, on: true },
+    { name: 'Холодная вода', icon: 'water', kind: 'var', due: 15, off: 1, on: true },
+    { name: 'Горячая вода', icon: 'water', kind: 'var', due: 15, off: 1, on: false },
+    { name: 'Газ', icon: 'gas', kind: 'var', due: 15, off: 1, on: false },
+    { name: 'Вывоз мусора', icon: 'trash', kind: 'fixed', due: 15, off: 1, on: true },
+    { name: 'Управляющий домом и содержание дома', icon: 'house', kind: 'fixed', due: 15, off: 1, on: true },
+    { name: 'Интернет, телефон и ТВ', icon: 'net', kind: 'fixed', due: 15, off: 0, on: true },
+    { name: 'Мобильные телефоны', icon: 'phone', kind: 'fixed', due: 15, off: 0, on: true, people: true }
+  ];
+  var CURRENCIES = ['RSD', 'EUR', '₽', '$', '₴', 'BYN', 'KZT'];
+
+  var $ = function (s, r) { return (r || document).querySelector(s); };
+  var qsa = function (s) { return Array.prototype.slice.call(document.querySelectorAll(s)); };
+  var esc = function (s) {
+    return String(s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; });
+  };
+  function pad(n) { return n < 10 ? '0' + n : '' + n; }
+  function isoOf(d) { return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()); }
+  function keyOf(d) { return d.getFullYear() + '-' + pad(d.getMonth() + 1); }
+  function parseKey(k) { var p = k.split('-'); return { y: +p[0], m: +p[1] - 1 }; }
+  function addMonths(k, n) { var p = parseKey(k); var t = p.y * 12 + p.m + n; return Math.floor(t / 12) + '-' + pad(t % 12 + 1); }
+  function daysIn(y, m) { return new Date(y, m + 1, 0).getDate(); }
+  function sod(d) { return new Date(d.getFullYear(), d.getMonth(), d.getDate()); }
+  function parseISO(s) { var p = s.split('-'); return new Date(+p[0], +p[1] - 1, +p[2]); }
+  function dayDiff(a, b) { return Math.round((sod(a) - sod(b)) / 86400000); }
+  function today() { return sod(new Date()); }
+  function plural(n, f) { n = Math.abs(n); var a = n % 10, b = n % 100; if (b > 10 && b < 20) return f[2]; if (a > 1 && a < 5) return f[1]; if (a === 1) return f[0]; return f[2]; }
+  function days(n) { return n + ' ' + plural(n, ['день', 'дня', 'дней']); }
+  function monthName(k) { return MON[parseKey(k).m]; }
+  function monthYear(k) { var p = parseKey(k); return MON[p.m] + ' ' + p.y; }
+  function dueText(d) { return d.getDate() + ' ' + MON_GEN[d.getMonth()] + (d.getFullYear() !== today().getFullYear() ? ' ' + d.getFullYear() : ''); }
+  function uid() { return 's' + Date.now().toString(36) + Math.random().toString(36).slice(2, 6); }
+  function parseNum(s) {
+    if (s == null) return null;
+    s = String(s).replace(/\s/g, '').replace(',', '.');
+    if (s === '') return null;
+    var n = Number(s);
+    return isFinite(n) && n >= 0 ? n : null;
+  }
+  function guessCur() {
+    var tz = ''; try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; } catch (e) {}
+    if (tz === 'Europe/Belgrade') return 'RSD';
+    if (/Moscow|Kaliningrad|Samara|Yekaterinburg|Omsk|Novosibirsk|Krasnoyarsk|Irkutsk|Yakutsk|Vladivostok|Kamchatka/.test(tz)) return '₽';
+    if (/Kiev|Kyiv|Uzhgorod|Zaporozhye/.test(tz)) return '₴';
+    if (tz === 'Europe/Minsk') return 'BYN';
+    if (/Almaty|Aqtau|Aqtobe|Oral|Qostanay|Qyzylorda/.test(tz)) return 'KZT';
+    if (/^America\//.test(tz)) return '$';
+    return 'EUR';
+  }
+  function tile(ic, sm) { return '<span class="tile' + (sm ? ' sm' : '') + '" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="' + (ICONS[ic] || ICONS.other) + '"/></svg></span>'; }
+
+  /* ---------- state ---------- */
+  var S = null, demo = false, backup = null, mode = 'loading', ref = null;
+  var saveTimer = null, inflight = 0, chain = Promise.resolve(), saveErr = null, storageErr = false, pendingImport = null;
+  var view = 'home', histYear = today().getFullYear(), openMonth = keyOf(today());
+  var sheet = null, forceRead = false, delArm = false, delTimer = null, toastTimer = null;
+
+  function emptyState() { return { v: 2, onboarded: false, name: '', currency: guessCur(), start: keyOf(new Date()), services: [], records: {} }; }
+  function normalize(d) {
+    var s = JSON.parse(JSON.stringify(d || {})), e = emptyState();
+    for (var k in e) if (s[k] == null) s[k] = e[k];
+    if (!Array.isArray(s.services)) s.services = [];
+    if (typeof s.records !== 'object' || !s.records) s.records = {};
+    s.services.forEach(function (x) {
+      if (!x.kind) x.kind = 'var';
+      if (!x.icon) x.icon = 'other';
+      if (!Array.isArray(x.prices)) x.prices = [];
+      if (x.unit === '') x.unit = null;
+    });
+    return s;
+  }
+  function migrate(d) {
+    var s = normalize(d);
+    if ((d && d.v || 1) < 2) {
+      if (!Object.keys(s.records).length) s = emptyState(); else s.v = 2;
+    }
+    return s;
+  }
+  function loadLocal() {
+    try { var t = localStorage.getItem(LS); if (t) return migrate(JSON.parse(t)); } catch (e) {}
+    return emptyState();
+  }
+  function persist() {
+    if (demo) return;
+    try { localStorage.setItem(LS, JSON.stringify(S)); if (storageErr) { storageErr = false; renderStatus(); } } catch (e) { if (!storageErr) { storageErr = true; renderStatus(); } }
+    if (ref) { clearTimeout(saveTimer); saveTimer = setTimeout(flush, 350); }
+  }
+  function flush() {
+    saveTimer = null;
+    if (!ref) return;
+    var snap = JSON.parse(JSON.stringify(S));
+    inflight++;
+    chain = chain.then(function () { return ref.set(snap); }).then(function () {
+      inflight--; saveErr = null; renderStatus();
+    }, function (e) {
+      inflight--;
+      if (e && e.code === 'invalid_argument') { ref = null; mode = 'local'; saveErr = null; }
+      else saveErr = e || { code: 'unavailable' };
+      renderStatus();
+    });
+  }
+  function onRemote(snap) {
+    if (demo || saveTimer || inflight > 0) return;
+    if (snap.metadata && snap.metadata.hasPendingWrites) return;
+    if (!snap.exists) return;
+    var d = migrate(snap.data());
+    if (JSON.stringify(d) === JSON.stringify(S)) return;
+    S = d; if (!sheet && !typing()) render();
+  }
+  function typing() { return qsa('#app input[type="text"]').some(function (i) { return i.value; }); }
+
+  /* ---------- domain ---------- */
+  function svcById(id) { for (var i = 0; i < S.services.length; i++) if (S.services[i].id === id) return S.services[i]; return null; }
+  function recOf(key, id) { return (S.records[key] && S.records[key][id]) || null; }
+  function setRec(key, id, rec) {
+    if (!S.records[key]) S.records[key] = {};
+    if (rec && (rec.reading != null || rec.amount != null || rec.paid || rec.skip)) S.records[key][id] = rec;
+    else delete S.records[key][id];
+    if (!Object.keys(S.records[key]).length) delete S.records[key];
+  }
+  function priceAt(svc, key) {
+    var p = svc.prices || [];
+    if (!p.length) return null;
+    var best = null, first = p[0], i;
+    for (i = 0; i < p.length; i++) {
+      if (p[i].from < first.from) first = p[i];
+      if (p[i].from <= key && (!best || p[i].from > best.from)) best = p[i];
+    }
+    return (best || first).amount;
+  }
+  function amountOf(svc, key, rec) {
+    if (rec && rec.amount != null) return rec.amount;
+    return svc.kind === 'fixed' ? priceAt(svc, key) : null;
+  }
+  function dueDate(key, svc) {
+    var p = parseKey(addMonths(key, svc.off || 0));
+    return new Date(p.y, p.m, Math.min(svc.due || 15, daysIn(p.y, p.m)));
+  }
+  function statusOf(key, svc, rec, t) {
+    var due = dueDate(key, svc);
+    rec = rec || {};
+    if (rec.skip) return { code: 'skip', due: due };
+    if (rec.paid) { var late = dayDiff(parseISO(rec.paid), due); return late > 0 ? { code: 'late', due: due, days: late } : { code: 'ontime', due: due }; }
+    var left = dayDiff(due, t);
+    if (left < 0) return { code: 'overdue', due: due, days: -left };
+    if (left <= 5) return { code: 'soon', due: due, days: left };
+    return { code: 'open', due: due, days: left };
+  }
+  function mkItem(key, svc, t) {
+    var rec = recOf(key, svc.id);
+    return { key: key, svc: svc, rec: rec, st: statusOf(key, svc, rec, t), amt: amountOf(svc, key, rec) };
+  }
+  function allItems(t) {
+    var cur = keyOf(t), out = [], last = cur;
+    Object.keys(S.records).forEach(function (k) { if (k > last) last = k; });
+    S.services.forEach(function (svc) {
+      var first = svc.from || cur;
+      Object.keys(S.records).forEach(function (k) { if (S.records[k][svc.id] && k < first) first = k; });
+      var k = first, g = 0;
+      while (k <= last && g++ < 240) { out.push(mkItem(k, svc, t)); k = addMonths(k, 1); }
+    });
+    return out;
+  }
+  function isActive(i, t) {
+    if (i.st.code === 'skip' || (i.rec && i.rec.paid)) return false;
+    return t >= new Date(i.st.due.getFullYear(), i.st.due.getMonth(), 1);
+  }
+  function noPrice(s) { return s.kind === 'fixed' && !s.prices.length; }
+  function readingsFor(id) {
+    var arr = [];
+    Object.keys(S.records).sort().forEach(function (k) { var r = S.records[k][id]; if (r && r.reading != null) arr.push({ key: k, val: r.reading }); });
+    return arr;
+  }
+  function prevReading(id, key) {
+    var arr = readingsFor(id), p = null;
+    for (var i = 0; i < arr.length; i++) { if (arr[i].key < key) p = arr[i]; else break; }
+    return p;
+  }
+  function nextDue(t) {
+    var cur = keyOf(t), best = null, end = addMonths(cur, 2);
+    S.services.forEach(function (s) {
+      if (noPrice(s)) return;
+      var k = s.from || cur, g = 0;
+      while (k <= end && g++ < 240) {
+        var st = statusOf(k, s, recOf(k, s.id), t);
+        if (st.code === 'open' || st.code === 'soon') { if (!best || st.due < best.due) best = { svc: s, due: st.due }; break; }
+        k = addMonths(k, 1);
+      }
+    });
+    return best;
+  }
+  function fmtNum(n, maxDec) { return Number(n).toLocaleString('ru-RU', { minimumFractionDigits: 0, maximumFractionDigits: maxDec == null ? 2 : maxDec }); }
+  function fmtMoney(n) { return fmtNum(n, 2) + ' ' + esc(S.currency); }
+  function meterHTML(v, unit) {
+    var dec = unit === 'м³' ? 3 : (v % 1 ? 2 : 0), s = Number(v).toFixed(dec), parts = s.split('.'), ip = parts[0];
+    while (ip.length < 5) ip = '0' + ip;
+    var h = '<span class="meter" role="img" aria-label="' + esc(s) + '">';
+    ip.split('').forEach(function (d) { h += '<b>' + d + '</b>'; });
+    if (parts[1]) parts[1].split('').forEach(function (d) { h += '<b class="r">' + d + '</b>'; });
+    return h + '</span>';
+  }
+  function describe(st) {
+    switch (st.code) {
+      case 'overdue': return { cls: 'bad', txt: 'Просрочено на ' + days(st.days) };
+      case 'soon': return { cls: 'warn', txt: st.days === 0 ? 'Срок сегодня' : 'Осталось ' + days(st.days) };
+      case 'open': return { cls: '', txt: 'Осталось ' + days(st.days) };
+      case 'ontime': return { cls: 'ok', txt: 'Оплачено вовремя' };
+      case 'late': return { cls: 'warn', txt: 'Оплачено с опозданием на ' + days(st.days) };
+      default: return { cls: '', txt: 'Счёта нет' };
+    }
+  }
+
+  /* ---------- demo ---------- */
+  function makeDemo() {
+    var t = today(), cur = keyOf(t), prev = addMonths(cur, -1), y = t.getFullYear();
+    var d = { v: 2, onboarded: true, name: 'Пример: квартира', currency: 'RSD', start: y + '-01', services: [], records: {} };
+    var defs = [
+      { id: 'e', name: 'Электричество', icon: 'power', kind: 'var', due: 15, off: 1, base: 3200 },
+      { id: 'h', name: 'Центральное отопление', icon: 'heat', kind: 'var', due: 15, off: 1, base: 5400 },
+      { id: 'w', name: 'Холодная вода', icon: 'water', kind: 'var', due: 15, off: 1, base: 1100 },
+      { id: 't', name: 'Вывоз мусора', icon: 'trash', kind: 'fixed', due: 15, off: 1, price: 380 },
+      { id: 'm', name: 'Управляющий домом и содержание дома', icon: 'house', kind: 'fixed', due: 15, off: 1, price: 2400, raise: [y + '-07', 2600] },
+      { id: 'i', name: 'Интернет, телефон и ТВ', icon: 'net', kind: 'fixed', due: 15, off: 0, price: 3200 },
+      { id: 'a', name: 'Мобильный Анна', icon: 'phone', kind: 'fixed', due: 15, off: 0, price: 1200 },
+      { id: 'p', name: 'Мобильный Пётр', icon: 'phone', kind: 'fixed', due: 15, off: 0, price: 1500 }
+    ];
+    defs.forEach(function (df) {
+      var s = { id: df.id, name: df.name, icon: df.icon, kind: df.kind, unit: null, due: df.due, off: df.off, from: y + '-01', prices: [] };
+      if (df.price) { s.prices.push({ from: y + '-01', amount: df.price }); if (df.raise) s.prices.push({ from: df.raise[0], amount: df.raise[1] }); }
+      d.services.push(s);
+    });
+    var k = y + '-01', idx = 0;
+    while (k <= cur) {
+      var m = parseKey(k).m;
+      d.services.forEach(function (svc, si) {
+        var df = defs[si], rec = {};
+        var season = df.id === 'h' ? (m < 3 || m > 9 ? 1.5 : 0.2) : 1 + 0.12 * Math.sin(idx + si);
+        if (svc.kind === 'var' && k < cur) rec.amount = Math.round(df.base * season / 10) * 10;
+        var due = dueDate(k, svc);
+        var billed = svc.kind === 'fixed' || rec.amount != null;
+        var skipPay = (df.id === 'e' && k === prev) || (df.id === 'w' && k === prev);
+        if (billed && !skipPay && dayDiff(t, due) >= 1) {
+          var shift = (idx + si) % 7 === 3 ? 3 : -2;
+          var pd = new Date(due.getFullYear(), due.getMonth(), due.getDate() + shift);
+          if (pd > t) pd = t;
+          rec.paid = isoOf(pd);
+        }
+        if (df.id === 'w' && k === prev) delete rec.amount;
+        if (rec.amount != null || rec.paid) { if (!d.records[k]) d.records[k] = {}; d.records[k][svc.id] = rec; }
+      });
+      k = addMonths(k, 1); idx++;
+    }
+    return d;
+  }
+
+  /* ---------- render ---------- */
+  function renderStatus() {
+    var el = $('#status'), h = '';
+    if (demo) h += '<div class="banner"><span>Это пример. Ваши данные не затронуты.</span><button data-a="exitDemo">Выйти</button></div>';
+    if (saveErr) h += '<div class="banner bad"><span>Не удалось сохранить. Изменения видны на экране, но пока не записаны.</span><button data-a="retrySave">Повторить</button></div>';
+    if (storageErr) h += '<div class="banner bad"><span>Браузер не даёт сохранить данные (возможно, включён приватный режим). Записи пропадут при закрытии страницы.</span></div>';
+    el.innerHTML = h;
+    el.style.marginBottom = h ? '14px' : '0';
+  }
+  function render() {
+    renderStatus();
+    var keep = {};
+    qsa('#app input[id]').forEach(function (i) { if (i.type === 'text' && i.value) keep[i.id] = i.value; });
+    var tabs = $('#tabs');
+    if (!S.onboarded) { tabs.hidden = true; $('#app').innerHTML = onboardingHTML(); return; }
+    tabs.hidden = false;
+    var t = today();
+    var over = allItems(t).filter(function (i) { return i.st.code === 'overdue' && !noPrice(i.svc); }).length;
+    var b = $('#badge'); b.textContent = over; b.hidden = !over;
+    qsa('.tab').forEach(function (el) {
+      if (el.getAttribute('data-v') === view) el.setAttribute('aria-current', 'page'); else el.removeAttribute('aria-current');
+    });
+    $('#app').innerHTML = view === 'home' ? homeHTML(t) : view === 'year' ? yearHTML(t) : settingsHTML();
+    Object.keys(keep).forEach(function (id) { var el = document.getElementById(id); if (el) el.value = keep[id]; });
+  }
+
+  function itemHTML(i) {
+    var s = i.svc, r = i.rec || {}, p = describe(i.st), key = i.key, amt = i.amt;
+    var h = '<div class="item"><button class="ihead" data-a="edit" data-key="' + key + '" data-svc="' + s.id + '">' + tile(s.icon) +
+      '<span class="itext"><span class="iname">' + esc(s.name) + '</span><span class="imeta">за ' + monthName(key) + ' · до ' + dueText(i.st.due) + '</span>' +
+      '<span class="pill ' + p.cls + '">' + p.txt + '</span></span></button>';
+    if (amt == null) {
+      h += '<div class="iact"><input type="text" inputmode="decimal" id="qa-' + s.id + '-' + key + '" class="big" placeholder="Сумма, ' + esc(S.currency) + '" aria-label="Сумма из счёта: ' + esc(s.name) + '" autocomplete="off">' +
+        '<button class="btn primary" data-a="quickAmt" data-key="' + key + '" data-svc="' + s.id + '">Сохранить</button></div>';
+    } else {
+      h += '<div class="iact' + (i.st.code === 'overdue' ? ' two' : '') + '"><span class="amt">' + fmtMoney(amt) + '</span>';
+      if (i.st.code === 'overdue') h += '<button class="btn" data-a="payOnTime" data-key="' + key + '" data-svc="' + s.id + '">Платил в срок</button>';
+      h += '<button class="btn primary" data-a="pay" data-key="' + key + '" data-svc="' + s.id + '">Оплатил</button></div>';
+    }
+    return h + '</div>';
+  }
+  function lineHTML(i, showMonth) {
+    var s = i.svc, p = describe(i.st), amt = i.amt, r = i.rec || {};
+    var meta = r.paid && i.st.code !== 'skip' ? p.txt : (amt == null && i.st.code !== 'skip' ? 'Сумма не внесена' : p.txt);
+    if (showMonth) meta = 'за ' + monthName(i.key) + ' · ' + (r.paid ? 'оплачено ' + dueText(parseISO(r.paid)) : meta.toLowerCase());
+    var cls = r.paid ? p.cls : (i.st.code === 'overdue' ? 'bad' : i.st.code === 'soon' ? 'warn' : '');
+    return '<button class="line" data-a="edit" data-key="' + i.key + '" data-svc="' + s.id + '">' + tile(s.icon, true) +
+      '<span class="itext"><span class="iname">' + esc(s.name) + '</span><span class="imeta ' + cls + '">' + esc(meta) + '</span></span>' +
+      '<span class="amt' + (amt == null ? ' e' : '') + '">' + (amt == null ? '—' : fmtNum(amt)) + '</span></button>';
+  }
+  function byDue(a, b) { return a.st.due - b.st.due; }
+
+  function homeHTML(t) {
+    var cur = keyOf(t), items = allItems(t), i;
+    var head = '<div class="top"><h1>Коммуналка</h1><p class="date">' + (S.name ? esc(S.name) + ' · ' : '') + DOW[t.getDay()] + ', ' + t.getDate() + ' ' + MON_GEN[t.getMonth()] + '</p></div>';
+    if (!S.services.length) return head + '<div class="card"><div class="empty">Пока нет ни одного счёта. Откройте раздел «Счета» и добавьте первый.</div></div>';
+
+    var setup = S.services.filter(noPrice);
+    var active = items.filter(function (it) { return !noPrice(it.svc) && isActive(it, t); }).sort(byDue);
+    var over = active.filter(function (it) { return it.st.code === 'overdue'; });
+    var pay = active.filter(function (it) { return it.st.code !== 'overdue' && it.amt != null; });
+    var ask = active.filter(function (it) { return it.st.code !== 'overdue' && it.amt == null; });
+    var paid = items.filter(function (it) { return it.rec && it.rec.paid && dayDiff(t, parseISO(it.rec.paid)) <= 60; })
+      .sort(function (a, b) { return a.rec.paid < b.rec.paid ? 1 : -1; }).slice(0, 4);
+
+    var sum;
+    if (over.length) {
+      var total = 0; over.forEach(function (it) { if (it.amt != null) total += it.amt; });
+      var oldest = over.slice().sort(function (a, b) { return b.st.days - a.st.days; })[0];
+      sum = '<div class="summary bad"><strong>Не оплачено в срок: ' + over.length + '</strong><span>' + (total ? 'На сумму ' + fmtMoney(total) + '. ' : '') + 'Дольше всех: ' + esc(oldest.svc.name) + ', ' + days(oldest.st.days) + '.</span></div>';
+    } else if (active.length && active[0].st.code === 'soon') {
+      var n = active[0];
+      sum = '<div class="summary warn"><strong>Скоро срок оплаты</strong><span>' + esc(n.svc.name) + ': ' + (n.st.days === 0 ? 'сегодня' : 'через ' + days(n.st.days)) + '.</span></div>';
+    } else {
+      var nd = nextDue(t);
+      sum = '<div class="summary ok"><strong>Просрочек нет</strong><span>' + (nd ? 'Ближайший срок: ' + esc(nd.svc.name) + ', до ' + dueText(nd.due) + '.' : 'Все счета оплачены.') + '</span></div>';
+    }
+
+    var h = head + sum;
+
+    if (setup.length) {
+      h += '<section class="sec"><h2>Укажите постоянные суммы <span class="cnt">' + setup.length + '</span></h2><p class="sub">Эта сумма будет подставляться каждый месяц. Изменить её позже можно в разделе «Счета».</p><div class="card">';
+      setup.forEach(function (s) {
+        h += '<div class="item"><div class="ihead static">' + tile(s.icon) + '<span class="itext"><span class="iname">' + esc(s.name) + '</span><span class="imeta">сумма в месяц</span></span></div>' +
+          '<div class="iact"><input type="text" inputmode="decimal" id="qp-' + s.id + '" class="big" placeholder="Сумма, ' + esc(S.currency) + '" aria-label="Сумма в месяц: ' + esc(s.name) + '" autocomplete="off">' +
+          '<button class="btn primary" data-a="setPrice" data-svc="' + s.id + '">Сохранить</button></div></div>';
+      });
+      h += '</div></section>';
+    }
+    if (over.length) {
+      h += '<section class="sec"><h2>Просрочено <span class="cnt">' + over.length + '</span></h2><div class="card bad">' + over.map(itemHTML).join('') + '</div></section>';
+    }
+    if (pay.length) {
+      h += '<section class="sec"><h2>К оплате <span class="cnt">' + pay.length + '</span></h2><p class="sub">Заплатили? Нажмите «Оплатил».</p><div class="card">' + pay.map(itemHTML).join('') + '</div></section>';
+    }
+    if (ask.length) {
+      h += '<section class="sec"><h2>Пришёл счёт? Внесите сумму <span class="cnt">' + ask.length + '</span></h2><p class="sub">Сумма в счёте меняется каждый месяц. После ввода счёт перейдёт в «К оплате».</p><div class="card">' + ask.map(itemHTML).join('') + '</div></section>';
+    }
+    if (!over.length && !pay.length && !ask.length && !setup.length) {
+      h += '<div class="card"><div class="empty">Сейчас платить нечего. Когда придёт новый счёт, он появится здесь.</div></div>';
+    }
+
+    var need = S.services.filter(function (s) { var r = recOf(cur, s.id); return s.unit && (s.from || cur) <= cur && !(r && r.reading != null); });
+    if (need.length) {
+      h += '<section class="sec"><h2>Показания счётчиков</h2><p class="sub">За ' + monthName(cur) + '. Необязательно, если считаете только счета.</p><div class="card">';
+      need.forEach(function (s) {
+        var pr = prevReading(s.id, cur);
+        h += '<div class="rd"><div class="rd-head"><b>' + esc(s.name) + '</b><span class="muted num">' + esc(s.unit) + '</span></div><div class="rd-body">' +
+          (pr ? meterHTML(pr.val, s.unit) : '<span class="muted" style="font-size:13px">Первое показание</span>') +
+          '<input type="text" inputmode="decimal" id="rd-' + s.id + '" class="big" placeholder="Новое" aria-label="Показание: ' + esc(s.name) + '" autocomplete="off"></div><p class="rd-warn" id="rw-' + s.id + '" hidden></p></div>';
+      });
+      h += '<div class="rd-foot"><button class="btn primary block" data-a="saveReadings">Сохранить показания</button></div></div></section>';
+    }
+    if (paid.length) {
+      h += '<section class="sec"><h2 class="sm">Оплачено недавно</h2><div class="card">' + paid.map(function (it) { return lineHTML(it, true); }).join('') + '</div></section>';
+    }
+    return h;
+  }
+
+  function monthItems(key, t) {
+    var cur = keyOf(t), out = [];
+    S.services.forEach(function (s) {
+      var rec = recOf(key, s.id), tracked = ((s.from || cur) <= key && key <= cur) || rec;
+      if (tracked && !(noPrice(s) && !rec)) out.push(mkItem(key, s, t));
+    });
+    return out;
+  }
+  function monthSummary(list) {
+    var c = { over: 0, late: 0, ok: 0, pend: 0, total: 0, n: 0 };
+    list.forEach(function (i) {
+      if (i.st.code === 'skip') return;
+      c.n++; if (i.amt != null) c.total += i.amt;
+      if (i.st.code === 'overdue') c.over++; else if (i.st.code === 'late') c.late++; else if (i.st.code === 'ontime') c.ok++; else c.pend++;
+    });
+    var parts = [];
+    if (c.over) parts.push('Просрочено: ' + c.over);
+    if (c.pend) parts.push('Ждёт оплаты: ' + c.pend);
+    if (c.late) parts.push('С опозданием: ' + c.late);
+    if (!parts.length && c.n) parts.push('Всё вовремя');
+    c.txt = parts.join(' · ');
+    c.cls = c.over ? 'bad' : c.late ? 'warn' : c.pend ? 'pend' : c.n ? 'ok' : '';
+    return c;
+  }
+  function yearHTML(t) {
+    var cur = keyOf(t), y = histYear, m, h;
+    var head = '<div class="top"><h1>За год</h1></div>';
+    if (!S.services.length) return head + '<div class="card"><div class="empty">Добавьте счета в разделе «Счета».</div></div>';
+    var months = [], total = 0, counted = 0, ontime = 0, over = 0, max = 0;
+    for (m = 0; m < 12; m++) {
+      var key = y + '-' + pad(m + 1), list = monthItems(key, t), sm = monthSummary(list);
+      months.push({ key: key, m: m, list: list, sum: sm });
+      total += sm.total; if (sm.total > max) max = sm.total;
+      list.forEach(function (i) { if (i.st.code === 'ontime') { counted++; ontime++; } else if (i.st.code === 'late') counted++; else if (i.st.code === 'overdue') { counted++; over++; } });
+    }
+    h = head + '<div class="bar"><button class="iconbtn" data-a="year" data-d="-1" aria-label="Предыдущий год">‹</button><span class="yr">' + y + '</span><button class="iconbtn" data-a="year" data-d="1" aria-label="Следующий год">›</button></div>' +
+      '<div class="stats"><div class="stat"><b>' + fmtMoney(total) + '</b><span>всего за ' + y + ' год</span></div>' +
+      '<div class="stat"><b' + (over ? ' style="color:var(--bad)"' : '') + '>' + (counted ? ontime + ' из ' + counted : '—') + '</b><span>' + (over ? 'оплачено вовремя · просрочено: ' + over : 'оплачено вовремя') + '</span></div></div>';
+
+    h += '<div><div class="chart"><div class="bars">';
+    months.forEach(function (mo) {
+      var px = max ? Math.round(mo.sum.total / max * 84) : 0;
+      h += '<button class="bcol' + (openMonth === mo.key ? ' sel' : '') + '" data-a="pickMonth" data-key="' + mo.key + '" aria-label="' + esc(monthName(mo.key) + ': ' + (mo.sum.total ? fmtNum(mo.sum.total) + ' ' + S.currency : 'нет данных')) + '">' +
+        '<span class="bfill ' + mo.sum.cls + '" style="height:' + Math.max(3, px) + 'px"></span><span class="blab">' + MON_SHORT[mo.m] + '</span></button>';
+    });
+    h += '</div></div><div class="legend"><span><i class="ok"></i>всё вовремя</span><span><i class="pend"></i>ждёт оплаты</span><span><i class="warn"></i>были опоздания</span><span><i class="bad"></i>просрочено</span></div></div>';
+
+    h += '<section class="sec"><h2>По месяцам</h2><div class="card">';
+    var shown = 0;
+    months.slice().reverse().forEach(function (mo) {
+      if (!mo.list.length) return;
+      shown++;
+      var open = openMonth === mo.key;
+      h += '<div id="m-' + mo.key + '"><button class="mrow" data-a="toggleMonth" data-key="' + mo.key + '" aria-expanded="' + open + '"><span class="mn"><b>' + monthName(mo.key) + '</b>' +
+        (mo.sum.txt ? '<span class="imeta ' + (mo.sum.cls === 'pend' ? '' : mo.sum.cls) + '">' + esc(mo.sum.txt) + '</span>' : '') + '</span>' +
+        '<span class="mt">' + (mo.sum.total ? fmtNum(mo.sum.total) : '—') + '</span><span class="chev' + (open ? ' open' : '') + '" aria-hidden="true">›</span></button>';
+      if (open) h += '<div class="mbody">' + mo.list.map(function (i) { return lineHTML(i, false); }).join('') + '</div>';
+      h += '</div>';
+    });
+    if (!shown) h += '<div class="empty">За ' + y + ' год записей нет.</div>';
+    h += '</div><p class="note">Суммы в ' + esc(S.currency) + '. Нажмите на строку, чтобы внести или исправить.</p></section>';
+
+    var per = S.services.map(function (s) {
+      var tot = 0; months.forEach(function (mo) { mo.list.forEach(function (i) { if (i.svc.id === s.id && i.st.code !== 'skip' && i.amt != null) tot += i.amt; }); });
+      return { s: s, tot: tot };
+    }).filter(function (x) { return x.tot > 0; }).sort(function (a, b) { return b.tot - a.tot; });
+    if (per.length) {
+      h += '<section class="sec"><h2>По счетам</h2><div class="card">';
+      per.forEach(function (x) {
+        h += '<div class="item" style="gap:8px"><div class="ihead static">' + tile(x.s.icon, true) + '<span class="itext"><span class="iname">' + esc(x.s.name) + '</span></span><span class="num" style="font-weight:700;font-size:14px">' + fmtNum(x.tot) + '</span></div>' +
+          '<div class="sbar" aria-hidden="true"><i style="width:' + Math.max(2, Math.round(x.tot / per[0].tot * 100)) + '%"></i></div></div>';
+      });
+      h += '</div></section>';
+    }
+
+    var ms = S.services.filter(function (s) { return s.unit; }), rh = '';
+    ms.forEach(function (s) {
+      var rows = readingsFor(s.id).filter(function (r) { return r.key.slice(0, 4) === '' + y; });
+      if (!rows.length) return;
+      rh += '<div class="rd"><div class="rd-head"><b>' + esc(s.name) + '</b><span class="muted num">' + esc(s.unit) + '</span></div>';
+      rows.forEach(function (r) {
+        var pr = prevReading(s.id, r.key);
+        rh += '<div class="rdl" style="padding:2px 0"><span>' + monthName(r.key) + '</span><span class="num">' + fmtNum(r.val, 3) + (pr ? ' <span class="muted">(' + (r.val - pr.val >= 0 ? '+' : '') + fmtNum(r.val - pr.val, 3) + ')</span>' : '') + '</span></div>';
+      });
+      rh += '</div>';
+    });
+    if (rh) h += '<section class="sec"><h2>Показания счётчиков</h2><div class="card">' + rh + '</div></section>';
+    return h;
+  }
+
+  function svcSub(s) {
+    var base = s.kind === 'fixed' ? (s.prices.length ? fmtMoney(priceAt(s, keyOf(today()))) + ' в месяц' : 'сумма не указана') : 'счёт каждый месяц разный';
+    return base + ' · до ' + (s.due || 15) + ' числа' + (s.unit ? ' · счётчик' : '');
+  }
+  function settingsHTML() {
+    var h = '<div class="top"><h1>Счета</h1><p class="date">Что вы оплачиваете и как</p></div>' +
+      '<section class="sec"><div class="card">' +
+      (S.services.length ? S.services.map(function (s) {
+        return '<button class="srow" data-a="editSvc" data-svc="' + s.id + '">' + tile(s.icon) + '<span style="flex:1;min-width:0"><div class="t">' + esc(s.name) + '</div><div class="s">' + esc(svcSub(s)) + '</div></span><span class="muted" aria-hidden="true">›</span></button>';
+      }).join('') : '<div class="empty">Счетов пока нет.</div>') +
+      '<div class="pad"><button class="btn primary block" data-a="addSvc">+ Добавить счёт</button></div></div></section>';
+
+    var cur = keyOf(today()), opts = '';
+    for (var i = 0; i < 48; i++) { var kk = addMonths(cur, -i); opts += '<option value="' + kk + '"' + (kk === S.start ? ' selected' : '') + '>' + monthYear(kk) + '</option>'; }
+    h += '<section class="sec"><h2 class="sm">Общее</h2><div class="card"><div class="pad">' +
+      '<div class="field"><label for="homeName">Название жилья</label><input type="text" id="homeName" value="' + esc(S.name) + '" maxlength="40" placeholder="Например, Квартира" autocomplete="off"></div>' +
+      '<div class="field"><span class="lbl">Валюта</span><div class="chips">' + CURRENCIES.map(function (c) { return '<button class="chip" data-a="cur" data-c="' + esc(c) + '" aria-pressed="' + (S.currency === c) + '">' + esc(c) + '</button>'; }).join('') + '</div>' +
+      '<input type="text" id="curIn" maxlength="6" value="' + esc(S.currency) + '" aria-label="Своя валюта" autocomplete="off"></div>' +
+      '<div class="field"><label for="startSel">Считать просрочки с месяца</label><div class="two-col"><select id="startSel">' + opts + '</select><button class="btn" data-a="applyStart">Применить</button></div>' +
+      '<p class="note">Более ранний месяц выберите, только если хотите внести и старые счета.</p></div></div></div></section>';
+
+    h += '<section class="sec"><h2 class="sm">Поделиться с близкими</h2><div class="card"><div class="pad"><p class="note" style="font-size:14px">Отправьте близким ссылку на это приложение. У каждого свои счета и суммы, они хранятся только на его телефоне и никому не видны.</p></div></div></section>';
+
+    h += '<section class="sec"><h2 class="sm">Данные</h2><div class="card"><div class="pad">' +
+      '<p class="note">' + 'Данные хранятся только на этом телефоне и никуда не отправляются. Если очистить данные сайтов или сменить телефон, без копии записи пропадут. Сохраняйте копию время от времени.' + '</p>' +
+      '<div class="two-col" style="grid-template-columns:1fr 1fr"><button class="btn" data-a="exportBackup">Сохранить копию</button><button class="btn" data-a="importPick">Загрузить копию</button></div>' +
+      (pendingImport ? '<div class="due-line warn">Файл прочитан: счетов — ' + pendingImport.services.length + ', месяцев с записями — ' + Object.keys(pendingImport.records).length + '. Заменить текущие данные?</div><div class="two-col" style="grid-template-columns:1fr 1fr"><button class="btn danger" data-a="importApply">Заменить</button><button class="btn" data-a="importCancel">Отмена</button></div>' : '') +
+      '<button class="btn block" data-a="demo">Посмотреть на примере</button>' +
+      '<button class="btn danger block" data-a="wipe">' + (delArm ? 'Нажмите ещё раз: удалить всё' : 'Удалить все данные') + '</button></div></div></section>';
+    return h;
+  }
+
+  function onboardingHTML() {
+    var rows = PRESETS.map(function (p, i) {
+      return '<div class="ob-item"><label class="check"><input type="checkbox" class="ob-on" id="ob-on-' + i + '"' + (p.on ? ' checked' : '') + '><span>' + esc(p.name) +
+        '<small>' + (p.kind === 'fixed' ? 'всегда одна сумма' : 'сумма в счёте меняется') + '</small></span></label>' +
+        '<div class="ob-extra">' + (p.people ? '<input type="text" id="ob-names" placeholder="Для кого: имена или инициалы через запятую" aria-label="Для кого мобильные счета" autocomplete="off">' : '') +
+        '<span>до</span><input type="number" inputmode="numeric" min="1" max="31" id="ob-due-' + i + '" value="' + p.due + '" aria-label="Срок оплаты, число месяца: ' + esc(p.name) + '"><span>числа,</span>' +
+        '<select id="ob-off-' + i + '" aria-label="За какой месяц счёт"><option value="1"' + (p.off ? ' selected' : '') + '>за прошлый месяц</option><option value="0"' + (p.off ? '' : ' selected') + '>за этот месяц</option></select></div></div>';
+    }).join('');
+    return '<div class="top"><h1>Коммуналка</h1><p class="date">Счета, сроки и оплаты в одном месте</p></div>' +
+      '<p class="lead">Отметьте, что вы оплачиваете, и укажите срок. Суммы вы введёте на следующем экране. Всё можно изменить позже.</p>' +
+      '<section class="sec"><h2>Что вы оплачиваете</h2><div class="card">' + rows + '</div><p class="note">Нужного нет? Добавите свой счёт позже в разделе «Счета».</p></section>' +
+      '<section class="sec"><h2>Валюта</h2><div class="chips">' + CURRENCIES.map(function (c) { return '<button class="chip" data-a="obCur" data-c="' + esc(c) + '" aria-pressed="' + (c === S.currency) + '">' + esc(c) + '</button>'; }).join('') + '</div></section>' +
+      '<section class="sec"><h2>С какого месяца вести учёт</h2><div class="seg"><label><input type="radio" name="obStart" value="-1" checked><span>С прошлого месяца</span></label><label><input type="radio" name="obStart" value="0"><span>С этого месяца</span></label></div>' +
+      '<p class="note">С прошлого месяца: приложение сразу покажет счета, которые вы платите сейчас.</p></section>' +
+      '<button class="btn primary block" data-a="obDone">Начать</button><button class="link" data-a="demo">Сначала посмотреть на примере</button>';
+  }
+
+  /* ---------- sheets ---------- */
+  function closeSheet() { sheet = null; $('#sheetRoot').innerHTML = ''; document.body.style.overflow = ''; }
+  function openSheet(o) { sheet = o; renderSheet(); document.body.style.overflow = 'hidden'; }
+  function renderSheet() {
+    if (!sheet) return;
+    var h = sheet.type === 'entry' ? entrySheetHTML() : svcSheetHTML();
+    if (!h) { closeSheet(); return; }
+    $('#sheetRoot').innerHTML = '<div class="scrim" data-a="closeSheet"></div>' + h;
+    var s = $('.sheet'); if (s) s.scrollTop = 0;
+  }
+  function entrySheetHTML() {
+    var svc = svcById(sheet.svcId), key = sheet.key, t = today();
+    if (!svc) return '';
+    var rec = recOf(key, svc.id) || {}, st = statusOf(key, svc, rec, t), p = describe(st);
+    var amt = amountOf(svc, key, rec);
+    var dueCls = st.code === 'overdue' ? 'bad' : (st.code === 'soon' || st.code === 'late') ? 'warn' : st.code === 'ontime' ? 'ok' : '';
+    var read = '';
+    if (svc.unit) {
+      var pr = prevReading(svc.id, key);
+      read = '<div class="field"><label for="f-reading">Показание, ' + esc(svc.unit) + '</label><input type="text" inputmode="decimal" id="f-reading" class="big" value="' + (rec.reading != null ? rec.reading : '') + '" autocomplete="off">' +
+        '<div class="hint">' + (pr ? 'Предыдущее (' + monthName(pr.key) + '): ' + meterHTML(pr.val, svc.unit) : 'Первое показание') + '</div><p class="rd-warn" id="f-rwarn" hidden></p></div>';
+    }
+    var fixedHint = svc.kind === 'fixed' ? '<div class="hint">Постоянная сумма' + (priceAt(svc, key) != null ? ': ' + fmtMoney(priceAt(svc, key)) : '') + '. <button class="linkbtn" data-a="priceFromEntry">Изменить</button></div>' : '';
+    return '<div class="sheet" role="dialog" aria-modal="true" aria-label="Запись по счёту">' +
+      '<div class="sheet-head"><span class="who">' + tile(svc.icon) + '<h2>' + esc(svc.name) + '</h2></span><button class="iconbtn" data-a="closeSheet" aria-label="Закрыть">×</button></div>' +
+      '<div class="stepper"><button class="iconbtn" data-a="period" data-d="-1" aria-label="Предыдущий месяц">‹</button><div class="cur"><small>счёт за</small>' + monthYear(key) + '</div><button class="iconbtn" data-a="period" data-d="1" aria-label="Следующий месяц">›</button></div>' +
+      '<div class="due-line ' + dueCls + '">Срок оплаты: ' + dueText(st.due) + (st.code === 'skip' ? '' : ' · ' + p.txt.toLowerCase()) + '</div>' +
+      '<div class="field"><label for="f-amount">Сумма' + (svc.kind === 'var' ? ' из счёта' : '') + ', ' + esc(S.currency) + '</label><input type="text" inputmode="decimal" id="f-amount" class="big" value="' + (amt != null ? amt : '') + '" autocomplete="off">' + fixedHint + '</div>' +
+      read +
+      '<label class="check"><input type="checkbox" id="f-paid"' + (rec.paid ? ' checked' : '') + '><span>Оплачено</span></label>' +
+      '<div class="field" id="f-paidrow"' + (rec.paid ? '' : ' hidden') + '><label for="f-paiddate">Дата оплаты</label><input type="date" id="f-paiddate" value="' + (rec.paid || isoOf(t)) + '"></div>' +
+      '<label class="check"><input type="checkbox" id="f-skip"' + (rec.skip ? ' checked' : '') + '><span>Счёта за этот месяц нет</span></label>' +
+      '<div class="acts"><button class="btn primary block" data-a="saveEntry">Сохранить</button>' +
+      (recOf(key, svc.id) ? '<button class="btn danger block" data-a="delEntry">Очистить запись за месяц</button>' : '') + '</div></div>';
+  }
+  function svcSheetHTML() {
+    var s = sheet.svc, isNew = sheet.isNew, cur = keyOf(today()), fixed = s.kind === 'fixed', opts = '', i;
+    var selFrom = isNew ? (s.from || cur) : cur;
+    for (i = -1; i < 37; i++) { var kk = addMonths(cur, -i); opts += '<option value="' + kk + '"' + (kk === selFrom ? ' selected' : '') + '>' + monthYear(kk) + '</option>'; }
+    var curPrice = s.prices.length ? priceAt(s, cur) : null;
+    var icons = Object.keys(ICONS).map(function (k) {
+      return '<label title="' + esc(ICON_LABEL[k]) + '"><input type="radio" name="s-icon" value="' + k + '"' + (s.icon === k ? ' checked' : '') + ' aria-label="' + esc(ICON_LABEL[k]) + '"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="' + ICONS[k] + '"/></svg></label>';
+    }).join('');
+    return '<div class="sheet" role="dialog" aria-modal="true" aria-label="Счёт">' +
+      '<div class="sheet-head"><h2>' + (isNew ? 'Новый счёт' : 'Настройки счёта') + '</h2><button class="iconbtn" data-a="closeSheet" aria-label="Закрыть">×</button></div>' +
+      '<div class="field"><label for="s-name">Название</label><input type="text" id="s-name" value="' + esc(s.name) + '" maxlength="60" autocomplete="off"></div>' +
+      '<div class="field"><span class="lbl">Значок</span><div class="icons">' + icons + '</div></div>' +
+      '<div class="field"><span class="lbl">Сумма</span><div class="seg"><label><input type="radio" name="s-kind" value="var"' + (fixed ? '' : ' checked') + '><span>Каждый месяц разная</span></label><label><input type="radio" name="s-kind" value="fixed"' + (fixed ? ' checked' : '') + '><span>Всегда одна и та же</span></label></div></div>' +
+      '<div id="s-fixedrow"' + (fixed ? '' : ' hidden') + ' style="display:flex;flex-direction:column;gap:14px">' +
+      '<div class="field"><label for="s-amount">Сумма в месяц, ' + esc(S.currency) + '</label><input type="text" inputmode="decimal" id="s-amount" class="big" value="' + (curPrice != null ? curPrice : '') + '" autocomplete="off"></div>' +
+      '<div class="field"><label for="s-pfrom">Действует с месяца</label><select id="s-pfrom">' + opts + '</select><p class="note">Если сумма изменилась, введите новую и выберите месяц, с которого она действует. Прошлые месяцы останутся со старой суммой.</p></div></div>' +
+      '<div class="field"><label for="s-due">Оплатить до числа</label><input type="number" inputmode="numeric" min="1" max="31" id="s-due" class="big" value="' + (s.due || 15) + '"></div>' +
+      '<div class="field"><label for="s-off">Счёт приходит</label><select id="s-off"><option value="1"' + (s.off ? ' selected' : '') + '>за прошлый месяц (оплата в следующем)</option><option value="0"' + (s.off ? '' : ' selected') + '>за этот же месяц</option></select>' +
+      '<p class="note" id="s-offhint"></p></div>' +
+      '<label class="check"><input type="checkbox" id="s-meter"' + (s.unit ? ' checked' : '') + '><span>Записывать показания счётчика</span></label>' +
+      '<div class="field" id="s-unitrow"' + (s.unit ? '' : ' hidden') + '><label for="s-unit">Единицы</label><input type="text" id="s-unit" value="' + esc(s.unit || 'м³') + '" maxlength="8" autocomplete="off"></div>' +
+      '<div class="acts"><button class="btn primary block" data-a="saveSvc">Сохранить</button>' +
+      (isNew ? '' : '<button class="btn danger block" id="s-del" data-a="delSvc">Удалить счёт</button>') + '</div></div>';
+  }
+  function updateOffHint() {
+    var el = $('#s-offhint'); if (!el) return;
+    var due = parseInt(($('#s-due') || {}).value, 10) || 15, off = +$('#s-off').value;
+    var t = today(), k = addMonths(keyOf(t), -1), p = parseKey(addMonths(k, off));
+    el.textContent = 'Например, счёт за ' + MON[parseKey(k).m] + ' нужно оплатить до ' + Math.min(due, daysIn(p.y, p.m)) + ' ' + MON_GEN[p.m] + '.';
+  }
+
+  function toast(msg, undo) {
+    var el = $('#toast');
+    el.innerHTML = '<span>' + esc(msg) + '</span>' + (undo ? '<button data-a="undo">Отменить</button>' : '');
+    el.hidden = false; el._undo = undo || null;
+    clearTimeout(toastTimer); toastTimer = setTimeout(function () { el.hidden = true; el._undo = null; }, undo ? 6000 : 2600);
+  }
+
+  /* ---------- actions ---------- */
+  function saveEntry() {
+    var svc = svcById(sheet.svcId), key = sheet.key, rec = {};
+    var rd = $('#f-reading'), am = $('#f-amount');
+    if (rd) {
+      var rv = parseNum(rd.value);
+      if (rv != null) {
+        var pr = prevReading(svc.id, key);
+        if (pr && rv < pr.val && !sheet.force) {
+          var w = $('#f-rwarn'); w.textContent = 'Меньше предыдущего показания (' + fmtNum(pr.val, 3) + '). Проверьте число. Если всё верно, нажмите «Сохранить» ещё раз.'; w.hidden = false; sheet.force = true; return;
+        }
+        rec.reading = rv;
+      }
+    }
+    var av = parseNum(am.value);
+    if (av != null && !(svc.kind === 'fixed' && av === priceAt(svc, key))) rec.amount = av;
+    if ($('#f-skip').checked) rec.skip = true;
+    if ($('#f-paid').checked) rec.paid = $('#f-paiddate').value || isoOf(today());
+    setRec(key, svc.id, rec);
+    persist(); closeSheet(); render(); toast('Сохранено');
+  }
+  function saveSvc() {
+    var s = sheet.svc, name = $('#s-name').value.trim(), due = parseInt($('#s-due').value, 10);
+    if (!name) { $('#s-name').focus(); return; }
+    if (!(due >= 1 && due <= 31)) { $('#s-due').focus(); return; }
+    var kind = document.querySelector('input[name="s-kind"]:checked').value;
+    var ic = document.querySelector('input[name="s-icon"]:checked');
+    s.name = name; s.due = due; s.off = +$('#s-off').value; s.kind = kind; s.icon = ic ? ic.value : (s.icon || 'other');
+    s.unit = $('#s-meter').checked ? ($('#s-unit').value.trim() || 'м³') : null;
+    if (kind === 'fixed') {
+      var v = parseNum($('#s-amount').value);
+      if (v != null) {
+        var pf = $('#s-pfrom').value;
+        if (!s.prices.length || priceAt(s, pf) !== v) {
+          var found = false;
+          s.prices.forEach(function (e) { if (e.from === pf) { e.amount = v; found = true; } });
+          if (!found) s.prices.push({ from: pf, amount: v });
+          s.prices.sort(function (a, b) { return a.from < b.from ? -1 : 1; });
+        }
+      }
+    }
+    if (sheet.isNew) S.services.push(s);
+    persist(); closeSheet(); render(); toast('Сохранено');
+  }
+  function openEntry(key, svcId) { if (svcById(svcId)) openSheet({ type: 'entry', key: key, svcId: svcId }); }
+  function openSvc(s, isNew) { openSheet({ type: 'svc', svc: s, isNew: isNew }); updateOffHint(); }
+  function newSvcFrom() { var c = keyOf(today()), a = addMonths(c, -1); return S.start > a ? S.start : a; }
+
+  var actions = {
+    tab: function (el) { view = el.getAttribute('data-v'); render(); window.scrollTo(0, 0); },
+    edit: function (el) { openEntry(el.getAttribute('data-key'), el.getAttribute('data-svc')); },
+    pay: function (el) {
+      var key = el.getAttribute('data-key'), id = el.getAttribute('data-svc');
+      var before = recOf(key, id), snap = before ? JSON.parse(JSON.stringify(before)) : null;
+      var rec = before ? JSON.parse(JSON.stringify(before)) : {};
+      rec.paid = isoOf(today()); delete rec.skip;
+      setRec(key, id, rec); persist(); render();
+      toast('Отмечено: оплачено сегодня', function () { setRec(key, id, snap); persist(); render(); });
+    },
+    payOnTime: function (el) {
+      var key = el.getAttribute('data-key'), id = el.getAttribute('data-svc'), svc = svcById(id);
+      var before = recOf(key, id), snap = before ? JSON.parse(JSON.stringify(before)) : null;
+      var rec = before ? JSON.parse(JSON.stringify(before)) : {};
+      rec.paid = isoOf(dueDate(key, svc)); delete rec.skip;
+      setRec(key, id, rec); persist(); render();
+      toast('Отмечено: оплачено в срок', function () { setRec(key, id, snap); persist(); render(); });
+    },
+    quickAmt: function (el) {
+      var key = el.getAttribute('data-key'), id = el.getAttribute('data-svc'), inp = document.getElementById('qa-' + id + '-' + key);
+      var v = parseNum(inp && inp.value);
+      if (v == null) { if (inp) inp.focus(); return; }
+      var rec = JSON.parse(JSON.stringify(recOf(key, id) || {})); rec.amount = v;
+      setRec(key, id, rec); persist(); render(); toast('Сумма внесена');
+    },
+    setPrice: function (el) {
+      var id = el.getAttribute('data-svc'), s = svcById(id), inp = document.getElementById('qp-' + id);
+      var v = parseNum(inp && inp.value);
+      if (v == null) { if (inp) inp.focus(); return; }
+      s.prices = [{ from: s.from || keyOf(today()), amount: v }];
+      persist(); render(); toast('Сумма сохранена');
+    },
+    undo: function () { var el = $('#toast'), u = el._undo; el.hidden = true; el._undo = null; if (u) u(); },
+    saveReadings: function () {
+      var cur = keyOf(today()), n = 0, warn = false;
+      S.services.forEach(function (s) {
+        var inp = $('#rd-' + s.id); if (!inp) return;
+        var v = parseNum(inp.value); if (v == null) return;
+        var pr = prevReading(s.id, cur), w = $('#rw-' + s.id);
+        if (pr && v < pr.val && !forceRead) { w.textContent = 'Меньше предыдущего (' + fmtNum(pr.val, 3) + '). Проверьте число.'; w.hidden = false; warn = true; return; }
+        var rec = JSON.parse(JSON.stringify(recOf(cur, s.id) || {})); rec.reading = v; setRec(cur, s.id, rec); n++;
+      });
+      if (warn) { forceRead = true; var b = $('[data-a="saveReadings"]'); if (b) b.textContent = 'Всё равно сохранить'; if (!n) return; }
+      if (n) { forceRead = false; persist(); render(); toast('Показания сохранены'); }
+      else if (!warn) toast('Введите хотя бы одно показание');
+    },
+    year: function (el) { histYear += +el.getAttribute('data-d'); openMonth = null; render(); },
+    pickMonth: function (el) {
+      openMonth = el.getAttribute('data-key'); render();
+      var t = document.getElementById('m-' + openMonth); if (t && t.scrollIntoView) t.scrollIntoView({ block: 'center' });
+    },
+    toggleMonth: function (el) { var k = el.getAttribute('data-key'); openMonth = openMonth === k ? null : k; render(); },
+    closeSheet: closeSheet,
+    period: function (el) { sheet.key = addMonths(sheet.key, +el.getAttribute('data-d')); sheet.force = false; renderSheet(); },
+    saveEntry: saveEntry,
+    delEntry: function () { setRec(sheet.key, sheet.svcId, null); persist(); closeSheet(); render(); toast('Запись очищена'); },
+    priceFromEntry: function () { var s = svcById(sheet.svcId); closeSheet(); if (s) openSvc(s, false); },
+    editSvc: function (el) { openSvc(svcById(el.getAttribute('data-svc')), false); },
+    addSvc: function () { openSvc({ id: uid(), name: '', icon: 'other', kind: 'var', unit: null, due: 15, off: 1, from: newSvcFrom(), prices: [] }, true); },
+    saveSvc: saveSvc,
+    delSvc: function (el) {
+      if (!sheet.arm) { sheet.arm = true; el.textContent = 'Нажмите ещё раз: удалить счёт и его записи'; return; }
+      var id = sheet.svc.id;
+      S.services = S.services.filter(function (s) { return s.id !== id; });
+      Object.keys(S.records).forEach(function (k) { delete S.records[k][id]; if (!Object.keys(S.records[k]).length) delete S.records[k]; });
+      persist(); closeSheet(); render(); toast('Счёт удалён');
+    },
+    cur: function (el) { S.currency = el.getAttribute('data-c'); persist(); render(); },
+    applyStart: function () {
+      var v = $('#startSel').value; S.start = v; S.services.forEach(function (s) { s.from = v; });
+      persist(); render(); toast('Учёт ведётся с ' + monthYear(v));
+    },
+    wipe: function () {
+      if (!delArm) { delArm = true; clearTimeout(delTimer); delTimer = setTimeout(function () { delArm = false; if (view === 'settings' && !sheet) render(); }, 5000); render(); return; }
+      delArm = false; S = emptyState(); view = 'home'; persist(); render();
+    },
+    demo: function () { if (demo) return; backup = S; S = makeDemo(); demo = true; view = 'home'; openMonth = keyOf(today()); closeSheet(); render(); window.scrollTo(0, 0); },
+    exitDemo: function () { demo = false; S = backup || emptyState(); backup = null; closeSheet(); render(); },
+    retrySave: function () { flush(); },
+    exportBackup: function () {
+      if (demo) { toast('В режиме примера копию сохранить нельзя'); return; }
+      var blob = new Blob([JSON.stringify(S, null, 1)], { type: 'application/json' });
+      var a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'kommunalka-' + isoOf(today()) + '.json';
+      document.body.appendChild(a); a.click(); a.remove(); setTimeout(function () { URL.revokeObjectURL(a.href); }, 4000);
+      toast('Копия сохранена в загрузки');
+    },
+    importPick: function () { if (demo) { toast('Сначала выйдите из режима примера'); return; } $('#importFile').click(); },
+    importApply: function () { if (!pendingImport) return; S = pendingImport; pendingImport = null; persist(); view = 'home'; render(); window.scrollTo(0, 0); toast('Данные загружены'); },
+    importCancel: function () { pendingImport = null; render(); },
+    obCur: function (el) { qsa('[data-a="obCur"]').forEach(function (b) { b.setAttribute('aria-pressed', b === el ? 'true' : 'false'); }); },
+    obDone: function () {
+      var startKey = keyOf(today());
+      var sel = document.querySelector('input[name="obStart"]:checked');
+      if (sel && sel.value === '-1') startKey = addMonths(startKey, -1);
+      var curBtn = document.querySelector('[data-a="obCur"][aria-pressed="true"]');
+      var svcs = [];
+      PRESETS.forEach(function (p, i) {
+        if (!$('#ob-on-' + i).checked) return;
+        var due = parseInt($('#ob-due-' + i).value, 10); if (!(due >= 1 && due <= 31)) due = p.due;
+        var off = +$('#ob-off-' + i).value;
+        function mk(name) { return { id: uid(), name: name, icon: p.icon, kind: p.kind, unit: null, due: due, off: off, from: startKey, prices: [] }; }
+        if (p.people) {
+          var names = $('#ob-names').value.split(',').map(function (x) { return x.trim(); }).filter(Boolean);
+          if (!names.length) svcs.push(mk('Мобильный телефон'));
+          names.forEach(function (n) { svcs.push(mk('Мобильный ' + n)); });
+        } else svcs.push(mk(p.name));
+      });
+      S.services = svcs; S.start = startKey; S.currency = curBtn ? curBtn.getAttribute('data-c') : S.currency; S.onboarded = true;
+      persist(); view = 'home'; render(); window.scrollTo(0, 0);
+    }
+  };
+
+  document.addEventListener('click', function (e) {
+    var el = e.target.closest ? e.target.closest('[data-a]') : null;
+    if (!el) return;
+    var fn = actions[el.getAttribute('data-a')];
+    if (fn) fn(el, e);
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && sheet) { closeSheet(); return; }
+    if (e.key === 'Enter' && e.target && e.target.tagName === 'INPUT' && e.target.type === 'text') {
+      var btn = e.target.parentNode && e.target.parentNode.querySelector('button[data-a]');
+      if (btn) { e.preventDefault(); btn.click(); }
+    }
+  });
+  document.addEventListener('change', function (e) {
+    var id = e.target.id, nm = e.target.name;
+    if (id === 'f-paid') { $('#f-paidrow').hidden = !e.target.checked; if (e.target.checked && !$('#f-paiddate').value) $('#f-paiddate').value = isoOf(today()); }
+    else if (id === 's-meter') { $('#s-unitrow').hidden = !e.target.checked; }
+    else if (nm === 's-kind') { $('#s-fixedrow').hidden = e.target.value !== 'fixed'; }
+    else if (id === 's-off') { updateOffHint(); }
+    else if (id === 'curIn') { S.currency = e.target.value.trim() || 'RSD'; persist(); render(); }
+    else if (id === 'homeName') { S.name = e.target.value.trim(); persist(); }
+    else if (id === 'importFile') {
+      var f = e.target.files && e.target.files[0]; if (!f) return;
+      var rd = new FileReader();
+      rd.onload = function () {
+        try { var o = JSON.parse(rd.result); if (!o || !Array.isArray(o.services) || typeof o.records !== 'object' || !o.records) throw new Error('bad'); pendingImport = migrate(o); }
+        catch (x) { pendingImport = null; toast('Не удалось прочитать файл копии'); }
+        render();
+      };
+      rd.onerror = function () { toast('Не удалось прочитать файл копии'); };
+      rd.readAsText(f); e.target.value = '';
+    }
+  });
+  document.addEventListener('input', function (e) {
+    if (e.target.id && e.target.id.indexOf('rd-') === 0) forceRead = false;
+    if (e.target.id === 'f-reading' && sheet) sheet.force = false;
+    if (e.target.id === 's-due') updateOffHint();
+  });
+  document.addEventListener('visibilitychange', function () { if (!document.hidden && S && !sheet && !typing()) render(); });
+
+  /* ---------- boot ---------- */
+  function boot() {
+    mode = 'local'; S = loadLocal();
+    try { if (navigator.storage && navigator.storage.persist) navigator.storage.persist(); } catch (e) {}
+    render();
+  }
+  boot();
+})();
+</script>
+</body>
+</html>
