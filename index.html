@@ -258,6 +258,17 @@
   .payrow2 { display: grid; grid-template-columns: 1fr 1fr 44px; gap: 8px; align-items: center; }
   .chips.wrap { flex-wrap: wrap; overflow: visible; }
   .line .amt small { display: block; font-size: 11px; font-weight: 500; color: var(--bad); text-align: right; }
+  .mrow .mt3 { display: flex; gap: 10px; text-align: right; }
+  .mrow .mt3 span { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
+  .mrow .mt3 i { font-style: normal; font-size: 10px; color: var(--dim); font-weight: 600; }
+  .mrow .mt3 b { font-family: var(--font-num); font-size: 13px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .mrow .mt3 .bad b { color: var(--bad); } .mrow .mt3 .warn b { color: var(--warn); }
+  .mtot { padding: 12px 16px; display: flex; flex-direction: column; gap: 6px; background: var(--surface); }
+  .mtot > div { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; font-size: 14px; }
+  .mtot > div span { color: var(--dim); }
+  .mtot > div b { font-family: var(--font-num); font-variant-numeric: tabular-nums; font-size: 16px; }
+  .mtot > div:last-child { border-top: 1px solid var(--line); padding-top: 6px; }
+  .mtot .bad b { color: var(--bad); } .mtot .warn b { color: var(--warn); }
 </style>
 </head>
 <body>
@@ -814,15 +825,15 @@
       if (!mo.list.length) return;
       shown++;
       var open = openMonth === mo.key, c = mo.sum;
-      var txt = c.txt + (c.remain > 0.004 ? (c.txt ? ' · ' : '') + 'остаток ' + fmtNum(c.remain) : '');
+      var txt = c.txt;
       h += '<div id="m-' + mo.key + '"><button class="mrow" data-a="toggleMonth" data-key="' + mo.key + '" aria-expanded="' + open + '"><span class="mn"><b>' + monthName(mo.key) + '</b>' +
         (txt ? '<span class="imeta ' + (c.cls === 'pend' ? '' : c.cls) + '">' + esc(txt) + '</span>' : '') + '</span>' +
-        '<span class="mt">' + (c.billed ? fmtNum(c.billed) : '—') + '</span><span class="chev' + (open ? ' open' : '') + '" aria-hidden="true">›</span></button>';
-      if (open) h += '<div class="mbody">' + mo.list.map(function (i) { return lineHTML(i, false); }).join('') + '</div>';
+        '<span class="mt3"><span><i>Выставлено</i><b>' + (c.n ? fmtNum(c.billed) : '—') + '</b></span><span><i>Оплачено</i><b>' + (c.n ? fmtNum(c.paid) : '—') + '</b></span><span class="' + (c.remain > 0.004 ? (c.over ? 'bad' : 'warn') : '') + '"><i>Осталось</i><b>' + (c.n ? fmtNum(c.remain) : '—') + '</b></span></span><span class="chev' + (open ? ' open' : '') + '" aria-hidden="true">›</span></button>';
+      if (open) h += '<div class="mbody"><div class="mtot"><div><span>Выставлено за месяц</span><b>' + fmtMoney(c.billed) + '</b></div><div><span>Оплачено за месяц</span><b>' + fmtMoney(c.paid) + '</b></div><div class="' + (c.remain > 0.004 ? (c.over ? 'bad' : 'warn') : '') + '"><span>Осталось оплатить</span><b>' + fmtMoney(c.remain) + '</b></div></div>' + mo.list.map(function (i) { return lineHTML(i, false); }).join('') + '</div>';
       h += '</div>';
     });
     if (!shown) h += '<div class="empty">За ' + y + ' год записей нет.</div>';
-    h += '</div><p class="note">Суммы в ' + esc(S.currency) + '. Справа показан выставленный счёт, «ост.» — сколько ещё не оплачено. Нажмите на строку, чтобы внести или исправить.</p></section>';
+    h += '</div><p class="note">Суммы в ' + esc(S.currency) + '. По каждому месяцу: сколько выставлено, сколько оплачено и сколько осталось оплатить. Нажмите на месяц, чтобы увидеть счета.</p></section>';
 
     var per = S.services.map(function (s) {
       var b = 0, pd = 0, rm = 0;
